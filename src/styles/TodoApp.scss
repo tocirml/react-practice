@@ -1,0 +1,55 @@
+.todo {
+  &-form {
+    display: flex;
+    justify-content: center;
+    input {
+      width: 300px;
+    }
+  }
+  &-filter {
+    margin-left: 20px;
+  }
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-list {
+    min-width: 30%;
+    list-style: none;
+  }
+  &-todo {
+    margin: 8px 0;
+    background-color: grey;
+    color: honeydew;
+    display: flex;
+  }
+  &-li {
+    flex: 1;
+    text-align: left;
+    padding-left: 5px;
+  }
+  &-checkeable {
+    cursor: pointer;
+  }
+  &-checked {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+}
+
+.icon {
+  background-size: cover;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  &-plus {
+    background-image: url('../assets/plus.png');
+  }
+  &-delete {
+    background-image: url('../assets/delete.png');
+  }
+  &-check {
+    background-image: url('../assets/check.png');
+  }
+}
