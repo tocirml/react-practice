@@ -9,7 +9,7 @@ const Nav = () => {
       </NavLink>
       {' | '}
       <NavLink to="/todo" activeStyle={activeStyle}>
-        Todo list
+        TodoApp
       </NavLink>
       {' | '}
       <NavLink to="/about" activeStyle={activeStyle}>

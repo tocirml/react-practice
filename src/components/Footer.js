@@ -1,6 +1,8 @@
+import '../styles/Footer.scss';
+
 const Footer = () => (
   <footer className="footer">
-    <p className="footer_autor">Creater by: Roberto</p>
+    <p className="footer_autor">Created by: Roberto</p>
   </footer>
 );
 

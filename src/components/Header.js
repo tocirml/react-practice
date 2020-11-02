@@ -1,7 +1,8 @@
 import Nav from './Nav';
+import '../styles/Header.scss';
 
 const Header = () => (
-  <header>
+  <header className="header">
     <Nav />
   </header>
 );
