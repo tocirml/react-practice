@@ -12,6 +12,10 @@ const Nav = () => {
         TodoApp
       </NavLink>
       {' | '}
+      <NavLink to="/bns" activeStyle={activeStyle}>
+        BnSim
+      </NavLink>
+      {' | '}
       <NavLink to="/about" activeStyle={activeStyle}>
         About
       </NavLink>

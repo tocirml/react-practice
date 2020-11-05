@@ -1,4 +1,4 @@
-import pikachu from '../assets/pikachu-surprised.png';
+import pikachu from '../assets/img/pikachu-surprised.png';
 
 const PageNotFound = () => (
   <>

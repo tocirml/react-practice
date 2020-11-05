@@ -6,6 +6,7 @@ import AboutPage from './AboutPage';
 import Footer from './Footer';
 import PageNotFound from './PageNotFound';
 import { Switch, Route, Redirect } from 'react-router-dom';
+import BnsAncientSim from './BnsAncientSim/BnsAncientSim';
 
 const App = () => (
   <div className="App">
@@ -14,6 +15,7 @@ const App = () => (
       <Switch>
         <Route path="/" exact component={HomePage} />
         <Route path="/todo" component={TodoApp} />
+        <Route path="/bns" component={BnsAncientSim} />
         <Route path="/about" component={AboutPage} />
         <Redirect from="/about-page" to="about" />
         <Route component={PageNotFound} />

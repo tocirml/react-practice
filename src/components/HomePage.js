@@ -1,4 +1,4 @@
-import pepega from '../assets/pepega.png';
+import pepega from '../assets/img/pepega.png';
 import '../styles/HomePage.scss';
 
 const HomePage = () => (
