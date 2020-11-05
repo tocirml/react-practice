@@ -1,12 +1,17 @@
-const GearItem = () => {
+const GearItem = ({ itemType, itemLevel, upgradeItem }) => {
   return (
-    <div className="gear-box-item">
+    <div
+      className="gear-box-item"
+      onClick={() => {
+        upgradeItem(itemType);
+      }}
+    >
       <img
-        src="https://static.ncsoft.com/bns_resource/ui_resource/weapon/weapon_gu_070194_col10_8_1.png"
-        alt="gear item img"
+        src={`/bnsItems/${itemType}.png`}
+        alt={`${itemType} icon`}
         className="gear-box-item-img"
       />
-      <span className="gear-box-item-level">+8</span>
+      <span className="gear-box-item-level">{`+${itemLevel}`}</span>
     </div>
   );
 };

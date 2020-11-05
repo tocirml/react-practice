@@ -1,22 +1,29 @@
 import GearItem from './GearItem';
 
-const GearDisplay = () => {
+const GearDisplay = ({ upgradeItem, currentLevels }) => {
   return (
     <div className="gear-box">
       <div className="gear-box-weapon">
-        <GearItem />
+        <GearItem
+          itemType={'weapon'}
+          itemLevel={currentLevels[0].level}
+          upgradeItem={upgradeItem}
+        />
       </div>
       <div className="gear-box-accesories">
-        <GearItem />
-        <GearItem />
-        <GearItem />
-        <GearItem />
-        <GearItem />
-        <GearItem />
-        <GearItem />
-        <GearItem />
-        <GearItem />
-        <GearItem />
+        {currentLevels.map((item) => {
+          if (item.type === 'weapon') {
+            return '';
+          }
+          return (
+            <GearItem
+              key={item.id}
+              itemType={item.type}
+              itemLevel={item.level}
+              upgradeItem={upgradeItem}
+            />
+          );
+        })}
       </div>
     </div>
   );

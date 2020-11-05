@@ -1,13 +1,13 @@
 import React from 'react';
 import ClassImage from './ClassImage';
 import GearDisplay from './GearDisplay';
-import naSuccessRates from './naSuccessRates';
+// import naSuccessRates from './naSuccessRates';
 
-const MainDisplay = ({ updateMaterials, currentLevel }) => {
+const MainDisplay = ({ upgradeItem, currentLevels }) => {
   return (
     <div className="bns__main-display">
       <ClassImage />
-      <GearDisplay />
+      <GearDisplay upgradeItem={upgradeItem} currentLevels={currentLevels} />
     </div>
   );
 };

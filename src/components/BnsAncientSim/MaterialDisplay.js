@@ -6,15 +6,15 @@ const MaterialDisplay = ({ gold, stones, trys }) => {
       <h2 className="bns__materials-display_h2">Materials used</h2>
       <label htmlFor="" className="bns_materials-display_label">
         GOLD:
-        {gold}
+        {' ' + gold}
       </label>
       <label htmlFor="" className="bns_materials-display_label">
         FUSION STONES:
-        {stones}
+        {' ' + stones}
       </label>
       <label htmlFor="" className="bns_materials-display_label">
         NUMBER OF TRYS:
-        {trys}
+        {' ' + trys}
       </label>
     </div>
   );
