@@ -1,5 +1,6 @@
 body {
   min-width: 300px;
+  color: #fff;
 }
 
 .App {
@@ -12,13 +13,9 @@ body {
   background-position: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .main {
   padding-bottom: 5rem; /* footer height */
+  filter: drop-shadow(2px 2px 1px #222);
 }
 
 @media (prefers-reduced-motion: no-preference) {

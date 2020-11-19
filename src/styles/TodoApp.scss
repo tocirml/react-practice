@@ -1,9 +1,16 @@
 .todo {
+  &-app {
+    font-weight: 600;
+    font-family: sans-serif;
+  }
   &-form {
     display: flex;
     justify-content: center;
     input {
       width: 300px;
+    }
+    button {
+      cursor: pointer;
     }
   }
   &-filter {
@@ -19,14 +26,15 @@
     list-style: none;
   }
   &-todo {
-    margin: 8px 0;
-    background-color: grey;
-    color: honeydew;
     display: flex;
+    margin: 8px 0;
+    background-color: rgb(2, 2, 2);
+    color: honeydew;
   }
   &-li {
     flex: 1;
     text-align: left;
+    align-self: center;
     padding-left: 5px;
   }
   &-checkeable {
@@ -39,10 +47,12 @@
 }
 
 .icon {
-  background-size: cover;
   display: inline-block;
   height: 15px;
   width: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
   &-plus {
     background-image: url('../assets/img/plus.png');
   }

@@ -5,6 +5,7 @@ const TodoForm = ({ addTodo, changeFilter }) => {
 
   const submitTodoHandler = (e) => {
     e.preventDefault();
+    if (textValue === '') return;
     addTodo({
       value: textValue,
       id: Math.random() * 10000,
@@ -24,6 +25,7 @@ const TodoForm = ({ addTodo, changeFilter }) => {
   return (
     <form className="todo-form" onSubmit={submitTodoHandler}>
       <input
+        autocomplete="off"
         onChange={inputChangeHandler}
         type="text"
         id="todo-input"
